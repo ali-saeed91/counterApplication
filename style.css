@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box ;
+
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.main{
+    background-color:aquamarine;
+    min-height: 100vh;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 80vh;
+    align-items: center;
+}
+
+h1{
+    margin: 1rem 0;
+    color: blueviolet;
+    font-size: 3rem;
+}
+
+.counter-card{
+    background-color:white;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;                
+}
+.counter-card > p{
+    font-size: 3rem;
+    color: crimson;
+}
+
+.btn-container{
+    margin: 1rem 0;
+}
+.btn-container > button{
+    padding: 12px 24px;
+    border-radius: 10px;
+    margin: 0 6px;
+    background-color: mediumpurple;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    transition: all 0.3s ease;
+}
+.btn-container > button:hover{
+    background-color:gold;
+    border: 2px solid white;
+    color: crimson;
+}
+
+@media(max-width: 331px){
+    .btn-container > button{
+        margin: 0 4px;
+    }
+}
